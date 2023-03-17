@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
-    "zoomLevel": 1,
+    "scrollTop": -495.33333333333275,
+    "scrollLeft": -457.3333333333336,
+    "zoomLevel": 0.5,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -43,27 +43,1689 @@
   "table": {
     "tables": [
       {
-        "name": "tab_kode_area",
-        "comment": "menentukan nama port",
-        "columns": [],
+        "name": "tab_OLT",
+        "comment": "menentukan OLT ke n",
+        "columns": [
+          {
+            "name": "id_OLT",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c04758fb-7884-4c46-925c-0cf0e248d0da"
+          },
+          {
+            "name": "urutan_OLT",
+            "comment": "PR menentukan urutan OLT atau penamaan OLT",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.40869140625,
+              "widthComment": 120,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "d8f10bbe-755a-4ad9-8fa5-403d8370ca52"
+          },
+          {
+            "name": "id_kode_area",
+            "comment": "",
+            "dataType": "INT (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.787109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "029da2b4-a081-4108-9af1-c457bd0e7756"
+          },
+          {
+            "name": "deskripsi",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "c7ad0f15-38ee-4fe7-9c85-6f044a73ab28"
+          },
+          {
+            "name": "kapasitas",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "c7822a81-d20f-4618-91f5-1d19c5bb46e4"
+          },
+          {
+            "name": "jumlah_port",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.92626953125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "6dadf088-85f4-4cda-814a-373968a8332e"
+          },
+          {
+            "name": "standar_jaringan",
+            "comment": "IEEE/ITU",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.84619140625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "e3e1350c-0696-437e-b25b-65e2981cfc05"
+          },
+          {
+            "name": "Konfigurasi_software",
+            "comment": "firmware, os?",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 123.39892578125,
+              "widthComment": 80.01904296875,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "4b18320c-2436-43a2-8548-a8c2c4394a37"
+          },
+          {
+            "name": "teknologi_akses",
+            "comment": "GPON/XG-PON",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.22802734375,
+              "widthComment": 95.17724609375,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "4c8c79e3-31f1-4724-b6c7-49f96ea7a7d7"
+          }
+        ],
         "ui": {
-          "active": true,
-          "left": 134.6667,
-          "top": 80.0001,
-          "zIndex": 13,
-          "widthName": 88.74072265625,
+          "active": false,
+          "left": 21.3338,
+          "top": 22.2224,
+          "zIndex": 346,
+          "widthName": 60,
           "widthComment": 120
         },
         "visible": true,
         "id": "6f6aa9c1-f8b7-4ab5-91bb-bffb1505b1fc"
+      },
+      {
+        "name": "tab_stb",
+        "comment": "Spliter terminal box",
+        "columns": [
+          {
+            "name": "id_stb",
+            "comment": "",
+            "dataType": "INT (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b7336a1d-eb67-4e07-80d5-e1bcdae9dfa2"
+          },
+          {
+            "name": "urutan_STB",
+            "comment": "urutan STB ke  n",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.37353515625,
+              "widthComment": 99.55078125,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "3a114fe9-bda9-4b2d-aabb-d819198e515c"
+          },
+          {
+            "name": "jenis_stb",
+            "comment": "tembaga/FO",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 74.25537109375,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "73ac1cd3-6b22-4404-af50-24400b58bbd8"
+          },
+          {
+            "name": "jumlah_port",
+            "comment": "",
+            "dataType": "INT (10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.92626953125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "69f08104-beb2-4f7c-ae2b-b27483528d2f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 18.0001,
+          "top": 298.3712,
+          "zIndex": 349,
+          "widthName": 60,
+          "widthComment": 113.26806640625
+        },
+        "visible": true,
+        "id": "942b587c-c286-49c2-853d-3b8942a9fe30"
+      },
+      {
+        "name": "tab_patch_cord",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_patch_cord",
+            "comment": "",
+            "dataType": "INT(25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 83.6689453125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6ec9b166-3b0d-4844-8061-7e52fdeaee45"
+          },
+          {
+            "name": "tipe_kabel",
+            "comment": "UTP/FO",
+            "dataType": "VARCHAR (25) ",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 60,
+              "widthDataType": 94.9423828125,
+              "widthDefault": 60
+            },
+            "id": "e21839ee-e4cb-4001-ab3f-3fb9a4dd8ca9"
+          },
+          {
+            "name": "panjang",
+            "comment": "",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "48d3abca-6c34-4860-ae03-706532194b16"
+          },
+          {
+            "name": "jenis_konektor",
+            "comment": "RJ45/LC",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.8271484375,
+              "widthComment": 60,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "20c9cdaf-7336-4638-91f5-b9397c7dc1c7"
+          },
+          {
+            "name": "warna",
+            "comment": "",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "95d08417-2ea2-4853-bf96-afb1f10ffc7b"
+          },
+          {
+            "name": "kecepatan",
+            "comment": "1G/10G",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.99169921875,
+              "widthComment": 60,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "ddd133bf-2f5e-4e10-8de2-bf3496f6e453"
+          },
+          {
+            "name": "standar",
+            "comment": "ethernet/fiberchannel",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "21df9a40-4a25-4f8b-9a13-8caa97af1134"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 188.6664,
+          "top": 477.2597,
+          "zIndex": 352,
+          "widthName": 91.62255859375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "82fe520a-016e-4a62-9274-d976b422ba71"
+      },
+      {
+        "name": "tab_kabel",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_kabel",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f546b884-760e-4c81-ad07-bf3e25f25ed9"
+          },
+          {
+            "name": "jenis_kabel",
+            "comment": "multimode",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.04443359375,
+              "widthComment": 61.96630859375,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "deb58f86-800a-4a56-965e-cb74de50874e"
+          },
+          {
+            "name": "panjang_kabel",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.576171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cb2b888d-2bd8-4736-a533-490c887f0f39"
+          },
+          {
+            "name": "Tipe_pelindung",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.4228515625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fd75806e-2f73-441c-a4a4-877348856d4a"
+          },
+          {
+            "name": "",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dd4dfb1f-cde2-4301-9f9e-b99f3562dc5a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 195.3329,
+          "top": 708.1668,
+          "zIndex": 361,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bc205472-fef5-460f-911e-bb9608d3c885"
+      },
+      {
+        "name": "tab_urutan_fo",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_urutan_fo",
+            "comment": "",
+            "dataType": "INT (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e150b93c-854d-442e-ab54-a2aec77d970a"
+          },
+          {
+            "name": "warna_kabel",
+            "comment": "",
+            "dataType": "VARCHAR (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 75.71533203125,
+              "widthComment": 60,
+              "widthDataType": 91.33056640625,
+              "widthDefault": 60
+            },
+            "id": "b5f9ab29-6db8-4c37-8ffa-f6584e663d6d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 196.4449,
+          "top": 897.6111,
+          "zIndex": 365,
+          "widthName": 82.234375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "43c9efd3-c66d-4616-85f3-4ee64e61404a"
+      },
+      {
+        "name": "tabel_server",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_server",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0d55f851-8b36-4797-9932-3e5fcb6b821d"
+          },
+          {
+            "name": "id_OLT",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "eade1d01-7d95-420b-9d3c-afbc98924d39"
+          },
+          {
+            "name": "id_patch_cord",
+            "comment": "",
+            "dataType": "INT(25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 83.6689453125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ef25c3d9-0941-499a-bac7-1c6d3ab3e33a"
+          },
+          {
+            "name": "id_stb",
+            "comment": "",
+            "dataType": "INT (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "48854471-3465-42de-8a85-907038b46bbe"
+          },
+          {
+            "name": "id_kabel",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a2a8047-0dd1-4e3a-aa8f-ad65a4101b52"
+          },
+          {
+            "name": "id_kabel",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "450254a9-fd9d-4fc3-bcd6-e568f6deeb67"
+          },
+          {
+            "name": "id_urutan_fo",
+            "comment": "",
+            "dataType": "INT (25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.28076171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "faf29638-b540-48a1-a630-fad83f4344bd"
+          },
+          {
+            "name": "IP address",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "35d02340-2aba-4fbc-a856-16861388f0e9"
+          },
+          {
+            "name": "id_swtich",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "511cff58-2091-4ef9-8ffd-655fc21f9146"
+          },
+          {
+            "name": "id_router",
+            "comment": "",
+            "dataType": "INT (",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d8900fc8-a29d-4d1e-bf91-02c16c640552"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 979.1667,
+          "top": 301.0924,
+          "zIndex": 531,
+          "widthName": 73.5380859375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "242799a9-b1fd-4ac2-aee2-725764aea5e4"
+      },
+      {
+        "name": "tab_router",
+        "comment": "atribut POP",
+        "columns": [
+          {
+            "name": "model_router",
+            "comment": "tipe atau seri router",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78.59716796875,
+              "widthComment": 114.00439453125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "351d5b82-6a86-46ed-a35f-be7398fffac6"
+          },
+          {
+            "name": "id_router",
+            "comment": "",
+            "dataType": "INT (",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "73935160-634d-4435-a574-447f3bcf78d3"
+          },
+          {
+            "name": "IP_Address",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.20263671875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ab23d259-0fac-475d-b191-f4b506e6808a"
+          },
+          {
+            "name": "fungsional",
+            "comment": "untuk koneksi internet, routing antar jaringan, dan lain-lain.",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7cf74950-75fc-41b8-b165-1397273d6096"
+          },
+          {
+            "name": "Versi_firmware",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.96630859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9359af03-aaed-4256-8330-ae72ad087229"
+          },
+          {
+            "name": "status",
+            "comment": "online/offline, terhubung/terputus, dan lain-lain.",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f8e344d5-b698-4ecf-ab54-fe397b336ea6"
+          },
+          {
+            "name": "mode",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "06f151f6-f349-4fb7-aa38-97429eec6b64"
+          },
+          {
+            "name": "tipe_interface",
+            "comment": "Ethernet, Fast Ethernet, Gigabit Ethernet, Serial, dan lain-lain",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.05078125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bcaf5648-a73d-4d15-8de6-1113ff89e9f4"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1449.8329,
+          "top": 26.6657,
+          "zIndex": 544,
+          "widthName": 61.26171875,
+          "widthComment": 69.1962890625
+        },
+        "visible": true,
+        "id": "bb2dc397-bdf9-4fa9-89b5-290aab895aa2"
+      },
+      {
+        "name": "tab_switch",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_swtich",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b150bb33-3d04-4eaa-87d6-1837e9070982"
+          },
+          {
+            "name": "model_switch",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.75537109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1a6eb7c5-33d8-40b4-a279-a27491a1ae19"
+          },
+          {
+            "name": "jumlah_port",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.92626953125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "539c5a96-42a9-41f1-90d6-e8c352f02c83"
+          },
+          {
+            "name": "mac_addres",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.5380859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0aba9430-3d05-4f30-a136-387420e7ffc0"
+          },
+          {
+            "name": "tipe_switch",
+            "comment": "switch layer 2 atau layer 3",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.30810546875,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "61d2fab8-11ca-4625-a007-8fd6e5dfb3a0"
+          },
+          {
+            "name": "Bandwidth",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "23c89b6f-1c5e-42dd-a845-a78ef64dfb71"
+          },
+          {
+            "name": "Konfigurasi_port",
+            "comment": "VLAN ID, speed, duplex, dan lain-lain",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 96.6689453125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1bf7bda4-fb22-4399-a867-acd10a86cc93"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 814.0001,
+          "top": 728.0006,
+          "zIndex": 522,
+          "widthName": 63.419921875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "50e52a60-7187-43e3-91d0-9650e1ec2584"
+      },
+      {
+        "name": "tab-server",
+        "comment": "",
+        "columns": [
+          {
+            "name": "IP address",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9ada7956-9175-4e5d-b045-ff6d679ed25a"
+          },
+          {
+            "name": "Jenis server",
+            "comment": "FTP, web server, database server, email server, dll",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.078125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "43e71914-e498-4d07-9a6c-9eccdf29eb71"
+          },
+          {
+            "name": "kapasistas server",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103.14990234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3591043b-5111-4813-b425-cda386a99b15"
+          },
+          {
+            "name": "sistem_operasi",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.42626953125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d1c617f7-4754-4f48-8de7-b4eeed1f642d"
+          },
+          {
+            "name": "id_server",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6b743e6b-3256-4521-8355-f9b5fa15a399"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 663.4078,
+          "top": 13.2756,
+          "zIndex": 527,
+          "widthName": 60.51904296875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a05c7948-55bf-46b5-a7bc-0b5be45c1d2c"
       }
     ],
     "indexes": []
   },
   "memo": {
-    "memos": []
+    "memos": [
+      {
+        "value": "konfrmasi jenis stb\n1. stb indor\n2. stb outdor\n3. stb drop\n4. stb inline\n5. stb rackmount\n6. stb wallmount\n7. stb dekstop",
+        "ui": {
+          "active": false,
+          "left": 8.66666666666677,
+          "top": 472.07407407407413,
+          "zIndex": 271,
+          "width": 127,
+          "height": 100
+        },
+        "id": "4284b60f-30da-4fee-bcba-78a6b28b3f47"
+      }
+    ]
   },
   "relationship": {
-    "relationships": []
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "6f6aa9c1-f8b7-4ab5-91bb-bffb1505b1fc",
+          "columnIds": [
+            "c04758fb-7884-4c46-925c-0cf0e248d0da"
+          ],
+          "x": 530.29327265625,
+          "y": 148.9724,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "eade1d01-7d95-420b-9d3c-afbc98924d39"
+          ],
+          "x": 979.1667,
+          "y": 383.29240000000004,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_olt_to_tabel_server",
+        "visible": true,
+        "id": "80e6695a-1b12-49cd-b5eb-206105198201"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "942b587c-c286-49c2-853d-3b8942a9fe30",
+          "columnIds": [
+            "b7336a1d-eb67-4e07-80d5-e1bcdae9dfa2"
+          ],
+          "x": 447.2549828125,
+          "y": 373.8712,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "48854471-3465-42de-8a85-907038b46bbe"
+          ],
+          "x": 979.1667,
+          "y": 438.09240000000005,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_stb_to_tabel_server",
+        "visible": true,
+        "id": "ff5fec94-5f53-48f9-8f92-67d9188c2a3d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "82fe520a-016e-4a62-9274-d976b422ba71",
+          "columnIds": [
+            "6ec9b166-3b0d-4844-8061-7e52fdeaee45"
+          ],
+          "x": 656.4359312500001,
+          "y": 583.5097000000001,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "ef25c3d9-0941-499a-bac7-1c6d3ab3e33a"
+          ],
+          "x": 979.1667,
+          "y": 328.49240000000003,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_patch_cord_to_tabel_server",
+        "visible": true,
+        "id": "b6a19d69-52b1-4f8f-bf7c-a3644a0b702b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bc205472-fef5-460f-911e-bb9608d3c885",
+          "columnIds": [
+            "f546b884-760e-4c81-ad07-bf3e25f25ed9"
+          ],
+          "x": 574.72206015625,
+          "y": 793.9168,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "450254a9-fd9d-4fc3-bcd6-e568f6deeb67"
+          ],
+          "x": 979.1667,
+          "y": 492.89240000000007,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_kabel_to_tabel_server",
+        "visible": true,
+        "id": "603853c3-ed0f-4bfb-bd27-d9f37625505b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "43c9efd3-c66d-4616-85f3-4ee64e61404a",
+          "columnIds": [
+            "e150b93c-854d-442e-ab54-a2aec77d970a"
+          ],
+          "x": 590.4907984375,
+          "y": 952.6111,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "faf29638-b540-48a1-a630-fad83f4344bd"
+          ],
+          "x": 979.1667,
+          "y": 547.6924,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_urutan_fo_to_tabel_server",
+        "visible": true,
+        "id": "ebb7ef16-fc47-4c04-ae9a-839715fa29e6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a05c7948-55bf-46b5-a7bc-0b5be45c1d2c",
+          "columnIds": [
+            "9ada7956-9175-4e5d-b045-ff6d679ed25a"
+          ],
+          "x": 1113.55770234375,
+          "y": 99.0256,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "35d02340-2aba-4fbc-a856-16861388f0e9"
+          ],
+          "x": 1164.50117265625,
+          "y": 301.0924,
+          "direction": "top"
+        },
+        "constraintName": "fk_tab-server_to_tabel_server",
+        "visible": true,
+        "id": "72d0502c-c6e0-4180-8f9f-9e09b3a6e91f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "50e52a60-7187-43e3-91d0-9650e1ec2584",
+          "columnIds": [
+            "b150bb33-3d04-4eaa-87d6-1837e9070982"
+          ],
+          "x": 1035.83457265625,
+          "y": 728.0006,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "511cff58-2091-4ef9-8ffd-655fc21f9146"
+          ],
+          "x": 1164.50117265625,
+          "y": 575.0924,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_tab_switch_to_tabel_server",
+        "visible": true,
+        "id": "a67c922b-ceb3-427c-9dcd-e7a4a93aaf42"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bb2dc397-bdf9-4fa9-89b5-290aab895aa2",
+          "columnIds": [
+            "73935160-634d-4435-a574-447f3bcf78d3"
+          ],
+          "x": 1449.8329,
+          "y": 143.16570000000002,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "242799a9-b1fd-4ac2-aee2-725764aea5e4",
+          "columnIds": [
+            "d8900fc8-a29d-4d1e-bf91-02c16c640552"
+          ],
+          "x": 1349.8356453125,
+          "y": 438.0924,
+          "direction": "right"
+        },
+        "constraintName": "fk_tab_router_to_tabel_server",
+        "visible": true,
+        "id": "6f9e577c-113c-4f52-b4b9-37d8cecb0630"
+      }
+    ]
   }
 }
