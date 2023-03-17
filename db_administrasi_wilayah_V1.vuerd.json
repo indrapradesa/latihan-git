@@ -18,7 +18,7 @@
       "relationship": true
     },
     "database": "MySQL",
-    "databaseName": "",
+    "databaseName": "db_administrasi_wilayah",
     "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
