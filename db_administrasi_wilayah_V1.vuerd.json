@@ -1,0 +1,750 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -118.00000000000026,
+    "scrollLeft": -437.33333333333434,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "tab_provinsi",
+        "comment": "tabel provinsi",
+        "columns": [
+          {
+            "name": "id_provinsi",
+            "comment": "berisi data id kelurahan",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "eb25a655-795f-498d-bb5e-c607ddbae9c3"
+          },
+          {
+            "name": "nama_provinsi",
+            "comment": "nama kelurahan",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.54443359375,
+              "widthComment": 95.22802734375,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "fd7d5f44-b9a6-4e76-bb92-faeb66e69782"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 200.8908,
+          "top": 25.0144,
+          "zIndex": 147,
+          "widthName": 72.09716796875,
+          "widthComment": 78.59716796875
+        },
+        "visible": true,
+        "id": "3ec13717-fbc4-4fb1-964d-f2a73f11b4d1"
+      },
+      {
+        "name": "tab_kota/kab",
+        "comment": "table kota dan kab",
+        "columns": [
+          {
+            "name": "id_kota_kab",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.10986328125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e604c1da-f570-434e-b829-2566686f28f0"
+          },
+          {
+            "name": "nama_kota",
+            "comment": "",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.32080078125,
+              "widthComment": 60,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "49e2995a-9585-4e37-9eab-39bbeb6203a1"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 203,
+          "top": 149.5004,
+          "zIndex": 175,
+          "widthName": 76.4453125,
+          "widthComment": 108.2470703125
+        },
+        "visible": true,
+        "id": "6cf33d4a-898f-42ee-8af2-3c70db50f9ee"
+      },
+      {
+        "name": "tab_kecamatan",
+        "comment": "tabel kecamatan",
+        "columns": [
+          {
+            "name": "id_kecamatan",
+            "comment": "",
+            "dataType": "INT(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.93896484375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "85f0cc41-22ce-4a02-9ae3-4e5e6aaca93d"
+          },
+          {
+            "name": "nama_kecamatan",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 105.33984375,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "b50dee0a-f9d1-4744-b891-21cecd3301d7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 203.1672,
+          "top": 279.8335,
+          "zIndex": 165,
+          "widthName": 90.892578125,
+          "widthComment": 97.392578125
+        },
+        "visible": true,
+        "id": "fe0879e6-3ed5-4560-b9cd-a0617160682f"
+      },
+      {
+        "name": "tab_kelurahan",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_kelurahan",
+            "comment": "",
+            "dataType": "INT(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.4453125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "96239478-28fd-474d-8fe5-e29c20e9550f"
+          },
+          {
+            "name": "nama_kelurahan",
+            "comment": "",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.84619140625,
+              "widthComment": 60,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "998c410c-2df6-4f1a-840a-aed35669d2df"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 206.8335,
+          "top": 413.3334,
+          "zIndex": 167,
+          "widthName": 84.39892578125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bc9144e9-9d5f-4022-a940-930626041955"
+      },
+      {
+        "name": "tab_wil_ad_ind",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_provinsi",
+            "comment": "berisi data id kelurahan",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 64.1435546875,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b8a165db-352c-40c2-8cbc-f93cc507a12c"
+          },
+          {
+            "name": "id_kota_kab",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.10986328125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fd93afa9-2bf4-417d-aefc-055fa4e02a40"
+          },
+          {
+            "name": "id_kecamatan",
+            "comment": "",
+            "dataType": "INT(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 82.93896484375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bbc44890-bb25-435f-aa45-213fda0b0c9f"
+          },
+          {
+            "name": "id_kelurahan",
+            "comment": "",
+            "dataType": "INT(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 76.4453125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ba174140-c675-4d4a-a219-af339c421530"
+          },
+          {
+            "name": "id_daerah",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0af83704-6c4e-4497-bb6f-16c14286c488"
+          },
+          {
+            "name": "id_kode_area",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 80.787109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "84761881-b9af-4494-9688-aa010c6bd799"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 839.666,
+          "top": 191.8337,
+          "zIndex": 240,
+          "widthName": 88.734375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87"
+      },
+      {
+        "name": "tab_daerah",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_daerah",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "95fdec13-060d-45e1-b103-28e247cfcdc9"
+          },
+          {
+            "name": "nama_daerah",
+            "comment": "",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.22802734375,
+              "widthComment": 60,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "6be8d689-98db-4b8c-bf1c-9ee82f0f45a9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 207.9075,
+          "top": 542.6666,
+          "zIndex": 242,
+          "widthName": 67.78076171875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "e4ea6391-0771-431d-a373-4c695c046b6f"
+      },
+      {
+        "name": "tab_kode-area",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id_kode_area",
+            "comment": "",
+            "dataType": "INT (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.787109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e00e141e-87b0-4747-b9a2-97b9b925ccb7"
+          },
+          {
+            "name": "kode_area",
+            "comment": "",
+            "dataType": "VARCHAR (4)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.43896484375,
+              "widthComment": 60,
+              "widthDataType": 84.1005859375,
+              "widthDefault": 60
+            },
+            "id": "1fb6be33-1b41-4cce-9c52-7054c0a81bc7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 858.4071,
+          "top": 466.704,
+          "zIndex": 245,
+          "widthName": 85.83984375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a3bdc5a5-affb-4bad-9d4c-a954cc8c62df"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": [
+      {
+        "value": "db_administrasi wilayah indonesia merupakan kumpulan basis data wilayah, provinsi, kota, kab, kec, kel,rw hingga rt",
+        "ui": {
+          "active": false,
+          "left": 22.333333333333226,
+          "top": 21.833333333333268,
+          "zIndex": 36,
+          "width": 127,
+          "height": 100
+        },
+        "id": "6ed529eb-c444-44c6-b1e0-06d529aeff69"
+      }
+    ]
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3ec13717-fbc4-4fb1-964d-f2a73f11b4d1",
+          "columnIds": [
+            "eb25a655-795f-498d-bb5e-c607ddbae9c3"
+          ],
+          "x": 627.99578046875,
+          "y": 80.0144,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "b8a165db-352c-40c2-8cbc-f93cc507a12c"
+          ],
+          "x": 839.666,
+          "y": 287.8337,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_provinsi_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "1fa16c33-b68b-4d55-8f43-ef897c91bb80"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "6cf33d4a-898f-42ee-8af2-3c70db50f9ee",
+          "columnIds": [
+            "e604c1da-f570-434e-b829-2566686f28f0"
+          ],
+          "x": 555.67041015625,
+          "y": 204.5004,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "fd93afa9-2bf4-417d-aefc-055fa4e02a40"
+          ],
+          "x": 839.666,
+          "y": 249.43370000000002,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_kota/kab_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "05853970-e266-4f25-8a36-30595435479c"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "fe0879e6-3ed5-4560-b9cd-a0617160682f",
+          "columnIds": [
+            "85f0cc41-22ce-4a02-9ae3-4e5e6aaca93d"
+          ],
+          "x": 585.45577421875,
+          "y": 334.8335,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "bbc44890-bb25-435f-aa45-213fda0b0c9f"
+          ],
+          "x": 839.666,
+          "y": 211.0337,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_kecamatan_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "e27b5f47-eadf-45bc-bcf8-3170c4ab412e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bc9144e9-9d5f-4022-a940-930626041955",
+          "columnIds": [
+            "96239478-28fd-474d-8fe5-e29c20e9550f"
+          ],
+          "x": 586.24023828125,
+          "y": 468.3334,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "ba174140-c675-4d4a-a219-af339c421530"
+          ],
+          "x": 839.666,
+          "y": 326.2337,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_kelurahan_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "5f2e08c1-0356-4603-a085-75a49e5e440f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e4ea6391-0771-431d-a373-4c695c046b6f",
+          "columnIds": [
+            "95fdec13-060d-45e1-b103-28e247cfcdc9"
+          ],
+          "x": 570.69607421875,
+          "y": 597.6666,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "0af83704-6c4e-4497-bb6f-16c14286c488"
+          ],
+          "x": 839.666,
+          "y": 364.6337,
+          "direction": "left"
+        },
+        "constraintName": "fk_tab_daerah_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "1b18fe26-bf0c-45e3-8d70-3d87e35b7d89"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a3bdc5a5-affb-4bad-9d4c-a954cc8c62df",
+          "columnIds": [
+            "e00e141e-87b0-4747-b9a2-97b9b925ccb7"
+          ],
+          "x": 1031.85094765625,
+          "y": 466.704,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "2a4058a9-0ff4-4c76-a7f6-d3d565477b87",
+          "columnIds": [
+            "84761881-b9af-4494-9688-aa010c6bd799"
+          ],
+          "x": 1032.1354824218752,
+          "y": 383.8337,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_tab_kode-area_to_tab_wil_ad_ind",
+        "visible": true,
+        "id": "57e36473-958c-4be8-830f-82391e884c83"
+      }
+    ]
+  }
+}
