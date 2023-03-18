@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -495.33333333333275,
-    "scrollLeft": -457.3333333333336,
-    "zoomLevel": 0.5,
+    "scrollTop": -496.0000000000002,
+    "scrollLeft": -477.3333333333335,
+    "zoomLevel": 0.4,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "db_backbone",
-    "canvasType": "@vuerd/builtin-sql-ddl",
+    "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -258,7 +258,7 @@
           "active": false,
           "left": 21.3338,
           "top": 22.2224,
-          "zIndex": 346,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 120
         },
@@ -366,7 +366,7 @@
           "active": false,
           "left": 18.0001,
           "top": 298.3712,
-          "zIndex": 349,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 113.26806640625
         },
@@ -543,7 +543,7 @@
           "active": false,
           "left": 188.6664,
           "top": 477.2597,
-          "zIndex": 352,
+          "zIndex": 4,
           "widthName": 91.62255859375,
           "widthComment": 60
         },
@@ -674,7 +674,7 @@
           "active": false,
           "left": 195.3329,
           "top": 708.1668,
-          "zIndex": 361,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -736,7 +736,7 @@
           "active": false,
           "left": 196.4449,
           "top": 897.6111,
-          "zIndex": 365,
+          "zIndex": 6,
           "widthName": 82.234375,
           "widthComment": 60
         },
@@ -980,9 +980,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 979.1667,
-          "top": 301.0924,
-          "zIndex": 531,
+          "left": 1050.2777,
+          "top": 289.9812,
+          "zIndex": 11,
           "widthName": 73.5380859375,
           "widthComment": 60
         },
@@ -1182,7 +1182,7 @@
           "active": false,
           "left": 1449.8329,
           "top": 26.6657,
-          "zIndex": 544,
+          "zIndex": 10,
           "widthName": 61.26171875,
           "widthComment": 69.1962890625
         },
@@ -1359,7 +1359,7 @@
           "active": false,
           "left": 814.0001,
           "top": 728.0006,
-          "zIndex": 522,
+          "zIndex": 12,
           "widthName": 63.419921875,
           "widthComment": 60
         },
@@ -1490,7 +1490,7 @@
           "active": false,
           "left": 663.4078,
           "top": 13.2756,
-          "zIndex": 527,
+          "zIndex": 8,
           "widthName": 60.51904296875,
           "widthComment": 60
         },
@@ -1508,7 +1508,7 @@
           "active": false,
           "left": 8.66666666666677,
           "top": 472.07407407407413,
-          "zIndex": 271,
+          "zIndex": 1,
           "width": 127,
           "height": 100
         },
@@ -1536,8 +1536,8 @@
           "columnIds": [
             "eade1d01-7d95-420b-9d3c-afbc98924d39"
           ],
-          "x": 979.1667,
-          "y": 383.29240000000004,
+          "x": 1050.2777,
+          "y": 372.18120000000005,
           "direction": "left"
         },
         "constraintName": "fk_tab_olt_to_tabel_server",
@@ -1562,8 +1562,8 @@
           "columnIds": [
             "48854471-3465-42de-8a85-907038b46bbe"
           ],
-          "x": 979.1667,
-          "y": 438.09240000000005,
+          "x": 1050.2777,
+          "y": 481.78120000000007,
           "direction": "left"
         },
         "constraintName": "fk_tab_stb_to_tabel_server",
@@ -1588,8 +1588,8 @@
           "columnIds": [
             "ef25c3d9-0941-499a-bac7-1c6d3ab3e33a"
           ],
-          "x": 979.1667,
-          "y": 328.49240000000003,
+          "x": 1050.2777,
+          "y": 317.38120000000004,
           "direction": "left"
         },
         "constraintName": "fk_tab_patch_cord_to_tabel_server",
@@ -1614,8 +1614,8 @@
           "columnIds": [
             "450254a9-fd9d-4fc3-bcd6-e568f6deeb67"
           ],
-          "x": 979.1667,
-          "y": 492.89240000000007,
+          "x": 1050.2777,
+          "y": 426.98120000000006,
           "direction": "left"
         },
         "constraintName": "fk_tab_kabel_to_tabel_server",
@@ -1640,8 +1640,8 @@
           "columnIds": [
             "faf29638-b540-48a1-a630-fad83f4344bd"
           ],
-          "x": 979.1667,
-          "y": 547.6924,
+          "x": 1050.2777,
+          "y": 536.5812000000001,
           "direction": "left"
         },
         "constraintName": "fk_tab_urutan_fo_to_tabel_server",
@@ -1666,8 +1666,8 @@
           "columnIds": [
             "35d02340-2aba-4fbc-a856-16861388f0e9"
           ],
-          "x": 1164.50117265625,
-          "y": 301.0924,
+          "x": 1142.944936328125,
+          "y": 289.9812,
           "direction": "top"
         },
         "constraintName": "fk_tab-server_to_tabel_server",
@@ -1692,8 +1692,8 @@
           "columnIds": [
             "511cff58-2091-4ef9-8ffd-655fc21f9146"
           ],
-          "x": 1164.50117265625,
-          "y": 575.0924,
+          "x": 1235.61217265625,
+          "y": 563.9812,
           "direction": "bottom"
         },
         "constraintName": "fk_tab_switch_to_tabel_server",
@@ -1718,9 +1718,9 @@
           "columnIds": [
             "d8900fc8-a29d-4d1e-bf91-02c16c640552"
           ],
-          "x": 1349.8356453125,
-          "y": 438.0924,
-          "direction": "right"
+          "x": 1328.279408984375,
+          "y": 289.9812,
+          "direction": "top"
         },
         "constraintName": "fk_tab_router_to_tabel_server",
         "visible": true,

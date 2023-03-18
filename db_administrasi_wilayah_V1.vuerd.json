@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -398.0052083333331,
-    "scrollLeft": -497.77777777777777,
-    "zoomLevel": 0.5,
+    "scrollTop": -282.0052083333328,
+    "scrollLeft": -307.1111111111108,
+    "zoomLevel": 0.7,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -159,7 +159,7 @@
           "active": false,
           "left": 203,
           "top": 149.5004,
-          "zIndex": 11,
+          "zIndex": 6,
           "widthName": 76.4453125,
           "widthComment": 108.2470703125
         },
@@ -230,7 +230,7 @@
       },
       {
         "name": "tab_kelurahan",
-        "comment": "",
+        "comment": "diambil dari data kelurahan dalam kecematan kota ",
         "columns": [
           {
             "name": "id_kelurahan",
@@ -283,9 +283,9 @@
           "active": false,
           "left": 206.8335,
           "top": 413.3334,
-          "zIndex": 4,
+          "zIndex": 14,
           "widthName": 84.39892578125,
-          "widthComment": 60
+          "widthComment": 120
         },
         "visible": true,
         "id": "bc9144e9-9d5f-4022-a940-930626041955"
@@ -437,7 +437,7 @@
           "active": false,
           "left": 839.666,
           "top": 191.8337,
-          "zIndex": 12,
+          "zIndex": 7,
           "widthName": 88.734375,
           "widthComment": 60
         },
@@ -446,7 +446,7 @@
       },
       {
         "name": "tab_daerah",
-        "comment": "",
+        "comment": "nama di ambil dari nama jalan atau keluarahan",
         "columns": [
           {
             "name": "id_daerah",
@@ -493,15 +493,61 @@
               "widthDefault": 60
             },
             "id": "6be8d689-98db-4b8c-bf1c-9ee82f0f45a9"
+          },
+          {
+            "name": "rw_ke",
+            "comment": "",
+            "dataType": "VARCHAR (100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 98.560546875,
+              "widthDefault": 60
+            },
+            "id": "2edec433-68ed-4597-acda-33ae56d49d05"
+          },
+          {
+            "name": "rt_ke",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "11b8518d-dc06-47b3-a223-2dbda6eb4c49"
           }
         ],
         "ui": {
           "active": false,
           "left": 207.9075,
           "top": 542.6666,
-          "zIndex": 7,
+          "zIndex": 29,
           "widthName": 67.78076171875,
-          "widthComment": 60
+          "widthComment": 120
         },
         "visible": true,
         "id": "e4ea6391-0771-431d-a373-4c695c046b6f"
@@ -561,7 +607,7 @@
           "active": false,
           "left": 858.4071,
           "top": 466.704,
-          "zIndex": 31,
+          "zIndex": 8,
           "widthName": 85.83984375,
           "widthComment": 60
         },
@@ -703,7 +749,7 @@
             "95fdec13-060d-45e1-b103-28e247cfcdc9"
           ],
           "x": 570.69607421875,
-          "y": 597.6666,
+          "y": 618.1666,
           "direction": "right"
         },
         "end": {
